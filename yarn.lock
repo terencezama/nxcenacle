@@ -1389,7 +1389,7 @@
   dependencies:
     nx "14.7.5"
 
-"@nrwl/cypress@^14.1.0":
+"@nrwl/cypress@14.7.13", "@nrwl/cypress@^14.1.0", "@nrwl/cypress@^14.5.0":
   version "14.7.13"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-14.7.13.tgz#b5d20f9b9d4911d9943761141c3c5f8b57d3cf72"
   integrity sha512-0HRYpLx+et5WSe8YSMtl3BNS9Zu8w6rXuoe7zKF6h2rAAmXPMti+9BObLeMZ7qF4/rYxM8XRzb4cYuTx6y5FZg==
@@ -1410,6 +1410,26 @@
     tslib "^2.3.0"
     webpack "^4 || ^5"
     webpack-node-externals "^3.0.0"
+
+"@nrwl/devkit@14.5.0":
+  version "14.5.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-14.5.0.tgz#138e0976e83ac90ca1844b24ca3f54eb0c5e46d0"
+  integrity sha512-uoZrMar3iy1eryhTW0uSgyA1GPxJLr5vc2+H1h1uEt2Ngb6Vrno+eos9t1Ph0KkEpMT91HXhNSQwI7ql5SR4mg==
+  dependencies:
+    ejs "^3.1.7"
+    ignore "^5.0.4"
+    semver "7.3.4"
+    tslib "^2.3.0"
+
+"@nrwl/devkit@14.5.2":
+  version "14.5.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-14.5.2.tgz#13f8d302072026da1ed37bd5f9ecc3eab9392635"
+  integrity sha512-li94W0D5SQZ7tjMiq+CZLHTx6/Gos5l3lc6jAzW/FHfoiAaaWN2zOPoydBQY7uw5TC+MH1jBbv/49Nf4wmXGVA==
+  dependencies:
+    ejs "^3.1.7"
+    ignore "^5.0.4"
+    semver "7.3.4"
+    tslib "^2.3.0"
 
 "@nrwl/devkit@14.7.13":
   version "14.7.13"
@@ -1432,7 +1452,7 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
-"@nrwl/jest@14.7.13":
+"@nrwl/jest@14.7.13", "@nrwl/jest@^14.5.0":
   version "14.7.13"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-14.7.13.tgz#c7ad2ec351bcee1fd297c6e5d632db80fb06f653"
   integrity sha512-Bti12/IpdJVryKafmU2FJjqaLjJcxq4e5SO/1rd6mw6N5ayd6UIeFhQJpGq/TYNCkN/Ig2Gyqw11HOLPQZEgWA==
@@ -1505,6 +1525,18 @@
     strip-json-comments "^3.1.1"
     tar "6.1.11"
     yargs-parser ">=21.0.1"
+
+"@nrwl/storybook@^14.7.13":
+  version "14.7.13"
+  resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-14.7.13.tgz#9ebc8f8860ee9b5f254a39f45e9d26f855f3dd0f"
+  integrity sha512-08N/UNJ03+r+JTlT54/zcMNrTZyrb6KKZ8TGyPgXVR6qRRVGhH4DLW6AorNoklBgcYxFlMdiw2AERQe5hwV0IQ==
+  dependencies:
+    "@nrwl/cypress" "14.7.13"
+    "@nrwl/devkit" "14.7.13"
+    "@nrwl/linter" "14.7.13"
+    "@nrwl/workspace" "14.7.13"
+    dotenv "~10.0.0"
+    semver "7.3.4"
 
 "@nrwl/tao@14.7.13":
   version "14.7.13"
@@ -1581,6 +1613,35 @@
     tslib "^2.3.0"
     yargs "^17.4.0"
     yargs-parser "21.0.1"
+
+"@nxext/svelte@^14.0.2":
+  version "14.0.2"
+  resolved "https://registry.yarnpkg.com/@nxext/svelte/-/svelte-14.0.2.tgz#914f360f01525c8cdad97b1924570b76425c7ef7"
+  integrity sha512-e2YFtmjp7RuGZ4UpyIfRQNLBtVVvkCq+UIzNZl4/g4dNl275fdlHvOY1ddv62+ihB6u2Qqil+qZ9SOiCxpCwMA==
+  dependencies:
+    "@nrwl/cypress" "^14.5.0"
+    "@nrwl/devkit" "14.5.2"
+    "@nrwl/jest" "^14.5.0"
+    "@nxext/vite" "^14.0.3"
+    "@nxext/vitest" "^14.0.0"
+
+"@nxext/vite@^14.0.3":
+  version "14.0.3"
+  resolved "https://registry.yarnpkg.com/@nxext/vite/-/vite-14.0.3.tgz#92179d913702b181b9f6def2b326986b63d59d9e"
+  integrity sha512-gTexrtDTHmD1FjN4wwDMmkSFZvUBjTSaeQ0PuI71ugSc2pCHMc269EVbv/pkUeWqfkvevLIicYi521+H2XOm0A==
+  dependencies:
+    "@nrwl/devkit" "14.5.0"
+    globrex "^0.1.2"
+    rxjs "^7.0.0"
+    rxjs-for-await "1.0.0"
+    tsconfig-paths "^3.14.1"
+
+"@nxext/vitest@^14.0.0":
+  version "14.0.2"
+  resolved "https://registry.yarnpkg.com/@nxext/vitest/-/vitest-14.0.2.tgz#beef533e433d6b09bb82b3910e303d13c96679c6"
+  integrity sha512-XHQnVbBxEYoueKQKdVv7OkS0OcwXszTw6G00K0eU4pOzguglhLNT39HZzAPdeFccrjw13RqXDBCKwYjIwlNEvA==
+  dependencies:
+    "@nrwl/devkit" "14.5.2"
 
 "@nxtensions/astro@^3.0.0":
   version "3.0.0"
@@ -6107,12 +6168,24 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
+rxjs-for-await@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rxjs-for-await/-/rxjs-for-await-1.0.0.tgz#89f4b2f2a95f93ab36f1e9fb8b5d0637bc9f8ca8"
+  integrity sha512-MJhvf1vtQaljd5wlzsasvOjcohVogzkHkUI0gFE9nGhZ15/fT2vR1CjkLEh37oRqWwpv11vHo5D+sLM+Aw9Y8g==
+
 rxjs@^6.5.4:
   version "6.6.7"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
   integrity sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==
   dependencies:
     tslib "^1.9.0"
+
+rxjs@^7.0.0:
+  version "7.5.7"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.7.tgz#2ec0d57fdc89ece220d2e702730ae8f1e49def39"
+  integrity sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==
+  dependencies:
+    tslib "^2.1.0"
 
 s.color@0.0.15:
   version "0.0.15"
@@ -6697,7 +6770,7 @@ tsconfig-paths-webpack-plugin@3.5.2:
     enhanced-resolve "^5.7.0"
     tsconfig-paths "^3.9.0"
 
-tsconfig-paths@^3.9.0:
+tsconfig-paths@^3.14.1, tsconfig-paths@^3.9.0:
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.14.1.tgz#ba0734599e8ea36c862798e920bcf163277b137a"
   integrity sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==
@@ -6724,7 +6797,7 @@ tslib@^1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.1, tslib@^2.0.3, tslib@^2.3.0, tslib@^2.4.0:
+tslib@^2.0.1, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.0, tslib@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
