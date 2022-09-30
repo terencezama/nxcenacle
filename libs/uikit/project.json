@@ -17,6 +17,39 @@
         "command": "svelte-check",
         "cwd": "libs/uikit"
       }
+    },
+    "storybook": {
+      "executor": "@nrwl/storybook:storybook",
+      "options": {
+        "uiFramework": "@storybook/svelte",
+        "port": 4400,
+        "config": {
+          "configFolder": "libs/uikit/.storybook"
+        },
+        "projectBuildConfig": "uikit:build-storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nrwl/storybook:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "uiFramework": "@storybook/svelte",
+        "outputPath": "dist/storybook/uikit",
+        "config": {
+          "configFolder": "libs/uikit/.storybook"
+        },
+        "projectBuildConfig": "uikit:build-storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
     }
   }
 }

@@ -2491,6 +2491,13 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
+"@storybook/addon-svelte-csf@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-svelte-csf/-/addon-svelte-csf-2.0.7.tgz#e6702eff8b7fe5ec2ee2073a86462e4f93438978"
+  integrity sha512-D5xc//FI3DPTcFuy3ldGEZfPEjHEe6fr+h9HmPcK0gBYN38i7tINX9grL5fWsYM/e3j5uBjpGBGtcNfU0T4ijw==
+  dependencies:
+    ts-dedent "^2.0.0"
+
 "@storybook/addon-toolbars@6.5.12":
   version "6.5.12"
   resolved "https://registry.yarnpkg.com/@storybook/addon-toolbars/-/addon-toolbars-6.5.12.tgz#ea81c63ae56eae8bc1d3b5a358cff66ae5a2d66e"
@@ -13905,6 +13912,16 @@ svelte-check@^2.8.0:
     svelte-preprocess "^4.0.0"
     typescript "*"
 
+svelte-dev-helper@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/svelte-dev-helper/-/svelte-dev-helper-1.1.9.tgz#7d187db5c6cdbbd64d75a32f91b8998bde3273c3"
+  integrity sha512-oU+Xv7Dl4kRU2kdFjsoPLfJfnt5hUhsFUZtuzI3Ku/f2iAFZqBoEuXOqK3N9ngD4dxQOmN4OKWPHVi3NeAeAfQ==
+
+svelte-hmr@^0.14.2:
+  version "0.14.12"
+  resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.14.12.tgz#a127aec02f1896500b10148b2d4d21ddde39973f"
+  integrity sha512-4QSW/VvXuqVcFZ+RhxiR8/newmwOCTlbYIezvkeN6302YFRE8cXy0naamHcjz8Y9Ce3ITTZtrHrIL0AGfyo61w==
+
 svelte-hmr@^0.15.0:
   version "0.15.0"
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.15.0.tgz#c8304b5dd33f006415329d91470761d19417a324"
@@ -13914,6 +13931,15 @@ svelte-jester@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/svelte-jester/-/svelte-jester-2.3.2.tgz#9eb818da30807bbcc940b6130d15b2c34408d64f"
   integrity sha512-JtxSz4FWAaCRBXbPsh4LcDs4Ua7zdXgLC0TZvT1R56hRV0dymmNP+abw67DTPF7sQPyNxWsOKd0Sl7Q8SnP8kg==
+
+svelte-loader@^3.1.2:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/svelte-loader/-/svelte-loader-3.1.3.tgz#3e24930bfe9b3d94b82e276eb844016d138fe646"
+  integrity sha512-B7HsKRrWaGB9RFef1t7JXbQ1npG/6J/Tka/ehv6pkxJx+QU9Dd8Sdi415IfhogpWEmH95VgsaWNrNU2GeBJ1VQ==
+  dependencies:
+    loader-utils "^2.0.0"
+    svelte-dev-helper "^1.1.9"
+    svelte-hmr "^0.14.2"
 
 svelte-preprocess@^4.0.0, svelte-preprocess@^4.10.7:
   version "4.10.7"

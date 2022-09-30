@@ -1,3 +1,3 @@
-import TestSvelte from './Test.svelte';
+import TestSvelte from './components/Test';
 
 export { TestSvelte };
