@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "uikit": ["libs/uikit/src/index.js"]
+      "uikit": ["libs/uikit/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

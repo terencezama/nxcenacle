@@ -1,11 +1,22 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/uikit",
+  "sourceRoot": "libs/uikit/src",
   "projectType": "library",
+  "tags": [],
   "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/uikit/**/*.{ts,svelte,spec.ts}"]
+      }
+    },
     "check": {
-      "executor": "@nxtensions/astro:check"
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "svelte-check",
+        "cwd": "libs/uikit"
+      }
     }
-  },
-  "tags": []
+  }
 }
